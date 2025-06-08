@@ -138,6 +138,13 @@ nav a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card img{
+  max-width: 300px; 
+  width: 100%; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -199,8 +206,16 @@ nav a:hover {
 
 @media screen and (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    padding: 0.8rem 1rem;
+    box-shadow: none;
+  }
+
+  .main-nav {
+    display: none;
   }
 
   nav {
@@ -209,12 +224,8 @@ nav a:hover {
     width: 100%;
   }
 
-  nav a {
-    margin: 0.3rem 0;
-  }
-
   .section {
-    padding: 6rem 1.5rem 2rem;
+    padding: 6rem 1rem 2rem;
   }
 
   .card {
@@ -224,5 +235,18 @@ nav a:hover {
   .social-icons {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .theme-toggle {
+    font-size: 1.4rem;
+    margin-left: auto;
+  }
+
+  .logo a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
   }
 }
