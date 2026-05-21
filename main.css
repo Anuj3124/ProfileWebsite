@@ -128,6 +128,29 @@ nav a:hover {
   background-color: #35546b;
 }
 
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-header h3 {
+  margin: 0;
+}
+
+.project-link {
+  color: #888;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-link:hover {
+  color: #0076ff;
+  transform: translateY(-2px);
+}
+
 .card {
   border: 1px solid var(--light-secondary);
   padding: 1rem;
